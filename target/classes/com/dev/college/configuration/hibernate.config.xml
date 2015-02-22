@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    
+    	<!-- properties -->
+    	<property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<property name="hibernate.connection.url">jdbc:sqlserver://localhost;databaseName=college</property>
+		<property name="hibernate.connection.username">sa</property>
+		<property name="hibernate.connection.password">sa</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.SQLServer2005Dialect</property>
+    	
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.jdbc.lob.non_contextual_creation">true</property>
+
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.max_size">20</property>
+		<property name="hibernate.c3p0.timeout">300</property>
+		<property name="hibernate.cs3p0.max_statements">50</property>
+		<property name="hibernate.c3p0.idle_test_period">3000</property>
+
+        <!-- mapping files -->
+        <mapping class="com.dev.college.skeleton.Student" />
+        <mapping class="com.dev.college.skeleton.Courses" />
+        <mapping class="com.dev.college.skeleton.Score" />
+
+    </session-factory>
+
+</hibernate-configuration>

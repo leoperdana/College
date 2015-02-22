@@ -1,0 +1,52 @@
+.place
+{
+	padding: 50px 40px;
+}
+
+.title
+{
+	margin-bottom: 20px;
+	color: #689599;
+	font-size: 24px;
+}
+
+.component
+{
+	margin-bottom: 15px;
+}
+
+.component label
+{
+	display: block;
+	padding: 5px 0px;
+	font-size: 15px;
+}
+
+.component input, 
+.component select
+{
+	box-sizing: border-box;
+	width: 300px;
+	border: 1px solid #cccccc;
+	padding: 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+}
+
+.component .error
+{
+	padding: 5px 0px;
+	font-size: 14px;
+	color: red;
+}
+
+.action
+{
+	margin-top: 20px;
+}
+
+.ng-invalid-required
+{
+    box-shadow: none;
+}

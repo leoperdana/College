@@ -1,0 +1,53 @@
+.container
+{
+	width: 800px;
+	padding: 80px 0px;
+	margin: 0px auto;
+}
+
+.place
+{
+	margin-top: 60px;
+}
+
+.place.first
+{
+	margin-top: 0px;
+}
+
+.header
+{
+	font-size: 22px;
+	padding: 15px;
+}
+
+table
+{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table tbody tr:nth-child(odd)
+{
+	background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even)
+{
+	background-color: #f2f2f2;
+}
+
+table th
+{
+	padding: 8px;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 14px;
+}
+
+table td
+{
+	padding: 5px;
+	text-align: center;
+}
